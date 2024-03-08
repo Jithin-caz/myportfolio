@@ -6,9 +6,11 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";
 import { ParallaxScroll } from "../components/ui/parallax-scroll"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Head from "next/head";
 export default function Home() {
   
   return (
+    <>
     <section>
       <div >
       <LampContainer>
@@ -66,6 +68,7 @@ export default function Home() {
       
       </footer>
     </section>
+    </>
   );
 }
 const images = [
