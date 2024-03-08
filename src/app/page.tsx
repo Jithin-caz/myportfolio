@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <>
     <section>
-      <div >
-      <LampContainer>
+      <div className=" relative">
+        <div >
+        <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,13 +30,18 @@ export default function Home() {
        <TextGenerateEffect words="Developer / UI designer"/>
        <div className=" w-full flex justify-center gap-3 pt-12 pb-12">
       <button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my resume</button>
-      <button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 "><a href="#WORKS">my works</a></button>
+      <a href="#WORKS" className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 "><button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my works</button></a>
       </div>
      
       </motion.h1>
       
     </LampContainer>
+        </div>
     
+    <h1 className=" text-white absolute bottom-36 text-center w-full px-14 sm:bottom-52 sm:px-28">
+      As a frontend dev, I have done projects in react js and next js
+      along with some simple websites using html ,css and vanilla js. My backend projects are done in express and nest js. I use figma to create 
+      attractive and unique UIs</h1>
       </div>
      
     <div id="WORKS">
@@ -45,11 +51,9 @@ export default function Home() {
    
     </div>
    
-     <footer className=" bg-white bg-opacity-5 fixed bottom-0 min-h-10 w-full backdrop-blur-lg ">
-     <div className=" text-sm text-white h-fit  p-3 px-12 text-center ">As a frontend dev, I have done projects in react js and next js
-      along with some simple websites using html ,css and vanilla js. My backend projects are done in express and nest js. I use figma to create 
-      attractive and unique UIs</div>
-      <div className=" flex justify-center gap-2 pb-3">
+     <footer className=" bg-white bg-opacity-5 fixed bottom-0  w-full backdrop-blur-lg align-middle py-2 ">
+      <div className=" flex justify-center gap-2 text-white">
+        ----
        <a href="https://github.com/Jithin-caz" target="_blank" className=" brightness-90 hover:brightness-100">
        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" alt="github"/>
        </a>
@@ -64,7 +68,7 @@ export default function Home() {
       <a className=" brightness-90 hover:brightness-100" href="https://mail.google.com/mail/?view=cm&fs=1&to=jithinreji185@gmail.com&su=Subject%20of%20the%20email&body=Body%20of%20the%20email" target="_blank">
       <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png" alt="gmail-new"/>
 </a>
-      </div>
+---- </div>
       
       </footer>
     </section>
