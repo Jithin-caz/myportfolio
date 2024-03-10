@@ -6,9 +6,18 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";
 import { ParallaxScroll } from "../components/ui/parallax-scroll"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import Head from "next/head";
 export default function Home() {
-  
+  const openPDFInNewTab = () => {
+    const pdfUrl = '/resume.pdf'; // Replace with the actual path to your PDF file
+    const newWindow = window.open(pdfUrl, '_blank');
+
+    if (newWindow) {
+      newWindow.opener = null; // Detach the new window from the current window
+    } else {
+      // Handle pop-up blocking or other issues
+      console.error('Unable to open PDF in a new tab. Please check your pop-up blocker settings.');
+    }
+  };
   return (
     <>
     <section>
@@ -29,7 +38,7 @@ export default function Home() {
        <br />
        <TextGenerateEffect words="Developer / UI designer"/>
        <div className=" w-full flex justify-center gap-3 pt-12 pb-12">
-      <button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my resume</button>
+      <button onClick={openPDFInNewTab} className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my resume</button>
       <a href="#WORKS" className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 "><button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my works</button></a>
       </div>
      
