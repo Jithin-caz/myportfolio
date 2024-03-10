@@ -38,8 +38,8 @@ export default function Home() {
        <br />
        <TextGenerateEffect words="Developer / UI designer"/>
        <div className=" w-full flex justify-center gap-3 pt-12 pb-12">
-      <button onClick={openPDFInNewTab} className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my resume</button>
-      <a href="#WORKS" className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 "><button className=" w-36 h-9 text-xl bg-blue-600 rounded-lg text-white hover:bg-blue-700 ">my works</button></a>
+      <button onClick={openPDFInNewTab} className=" w-36 h-9 text-xl bg-blue-600 rounded text-white hover:bg-blue-700 ">my resume</button>
+      <a href="#WORKS" className=" w-36 h-9 text-xl bg-blue-600 rounded text-white hover:bg-blue-700 "><button className=" w-36 h-9 text-xl bg-blue-600 rounded text-white hover:bg-blue-700 ">my works</button></a>
       </div>
      
       </motion.h1>
