@@ -8,7 +8,7 @@ import { ParallaxScroll } from "../components/ui/parallax-scroll"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 export default function Home() {
   const openPDFInNewTab = () => {
-    const pdfUrl = '/resume3.pdf'; // Replace with the actual path to your PDF file
+    const pdfUrl = '/jithinReji_MACE_CS26.pdf'; // Replace with the actual path to your PDF file
     const newWindow = window.open(pdfUrl, '_blank');
 
     if (newWindow) {
